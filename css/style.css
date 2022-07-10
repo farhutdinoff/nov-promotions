@@ -75,7 +75,7 @@ section{
   border-radius: 100%;
   background: #fff;
   top: 37%;
-  right: 26%;
+  right: 20%;
   animation-iteration-count: infinite;
   animation-name: blink;
   animation-duration: 2s;
@@ -465,6 +465,9 @@ element.style {
 @media (max-width: 1999px){
   .banner_title{
     font-size: 76px;
+  }
+  .banner_title:before{
+    right: 26%;
   }
 }
 @media (max-width: 991px){
