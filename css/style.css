@@ -9,11 +9,6 @@ body{
   line-height: 30px;
   color: #fff;
   background-color: #000;
-  background-image: url(../img/stars2.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  animation: bg-animation 25s ease-in-out infinite;
 }
 img{
   max-width: 100%;
@@ -458,33 +453,6 @@ element.style {
   opacity: 1;
   left: 80%;
 }
-@keyframes bg-animation {
-    0% {
-        background-size: 120%;
-        background-position: 50% 50%
-    }
-    20% {
-        background-size: 150%;
-        background-position: 0 50%;
-    }
-    40% {
-        background-size: 110%;
-        background-position: 20% 80%;
-    }
-    60% {
-        background-size: 160%;
-        background-position: 60% 10%;
-    }
-    80% {
-        background-size: 120%;
-        background-position: 40% 70%;
-    }
-    100% {
-        background-size: 120%;
-        background-position: 50% 50%
-    }
-}
-
 
 @keyframes arrow {
     0% { background-position: 0 0; }
