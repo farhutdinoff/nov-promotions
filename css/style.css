@@ -1,0 +1,575 @@
+@import "normalize.css";
+@import "bootstrap.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+  font-family: 'Commissioner', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  color: #fff;
+  background-color: #000;
+  background-image: url(../img/stars2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+img{
+  max-width: 100%;
+}
+input,
+button,
+button:focus{
+  outline: none;
+  box-shadow: none !important;
+}
+a:hover{
+  text-decoration: none;
+}
+section{
+  position: relative;
+}
+.header{
+  padding: 6px 0;
+  border-bottom: 1px solid #fff;
+}
+.nav a{
+  margin-left: 55px;
+  text-transform: uppercase;
+  color: #fff;
+  display: block;
+  position: relative;
+}
+.nav a:before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #fff;
+  transition: all .5s ease;
+}
+.nav a:hover:before{
+  width: 100%;
+}
+.banner_desc{
+  font-size: 24px;
+  text-transform: uppercase;
+  max-width: 570px;
+}
+.banner_title{
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 160px;
+  text-transform: uppercase;
+  text-align: right;
+  position: relative;
+  margin-bottom: 240px;
+}
+.banner_title:before{
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background: #fff;
+  top: 37%;
+  right: 26%;
+  animation-iteration-count: infinite;
+  animation-name: blink;
+  animation-duration: 2s;
+}
+@keyframes blink {
+  0%   { opacity: 1; }
+  50%  { opacity: 0; }
+  100% { opacity: 1; }
+}
+section.banner{
+  padding-top: 320px;
+}
+.section-title{
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.self-border{
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  animation-iteration-count: infinite;
+  animation-name: bounce4;
+  animation-duration: 1.4s;
+  transform-origin: top;
+}
+.mb-24{
+  margin-bottom: 24px;
+}
+.mb-39{
+  margin-bottom: 39px;
+}
+.mb-62{
+  margin-bottom: 62px;
+}
+.mt-90{
+  margin-top: 90px;
+}
+.mt-75{
+  margin-top: 75px;
+}
+.mb-85{
+  margin-bottom: 85px;
+}
+.mb-101{
+  margin-bottom: 101px;
+}
+.mb-135{
+  margin-bottom: 135px;
+}
+.mb-163{
+  margin-bottom: 163px;
+}
+
+.self-border:nth-child(1) {
+  animation-name: bounce1;
+  animation-duration: 1.3s;
+  transform-origin: top;
+}
+.self-border:nth-child(2) {
+  animation-name: bounce2;
+  animation-duration: 1.8s;
+  transform-origin: bottom;
+}
+.self-border:nth-child(3) {
+  animation-name: bounce3;
+  animation-duration: 2s;
+  transform-origin: bottom;
+}
+.self-border:nth-child(4) {
+  animation-name: bounce4;
+  animation-duration: 1.4s;
+  transform-origin: top;
+}
+.self-border:nth-child(5) {
+  animation-name: bounce5;
+  animation-duration: 1.9s;
+  transform-origin: bottom;
+}
+.self-border:nth-child(6) {
+  animation-name: bounce1;
+  animation-duration: 2.1s;
+  transform-origin: bottom;
+}
+
+
+@keyframes bounce1 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-13px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes bounce2 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-11px); }
+  100% { transform: translateY(0); }
+}
+@keyframes bounce3 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-17px); }
+  100% { transform: translateY(0); }
+}
+@keyframes bounce4 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-7px); }
+  100% { transform: translateY(0); }
+}
+@keyframes bounce5 {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+
+
+.services{
+  border-top: 1px solid #fff;
+  padding-bottom: 415px;
+}
+.services:before{
+  content: "";
+  position: absolute;
+  width: 195px;
+  height: 195px;
+  top: -130px;
+  right: 20%;
+  background: #fff;
+  border-radius: 100%;
+  z-index: 1;
+  animation-name: bounce5;
+  animation-duration: 2.5s;
+  transform-origin: top;
+  animation-iteration-count: infinite;
+}
+.services:after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: 10%;
+  left: 20%;
+  z-index: 1;
+  background-image: url(../img/bolls-1.png);
+  animation-name: bounce5;
+  animation-duration: 2.3s;
+  transform-origin: top;
+  animation-iteration-count: infinite;
+}
+.card{
+  background-color: inherit;
+  width: 465px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-header,
+.collapse{
+
+}
+.card-header button{
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.btn-link:focus{
+  text-decoration: none;
+}
+.card-header button span{
+  content: "";
+  width: 25px;
+  height: 30px;
+  position: absolute;
+  right: 0;
+  top: 5%;
+  background-repeat: no-repeat;
+  transition: all .5s ease;
+  background-image: url(../img/icon-arrow.png);
+}
+
+.card-header button.collapsed span{
+  transform: rotate(180deg);
+}
+.card-header button:hover{
+  color: #fff;
+  text-decoration: none;
+}
+.card-body,.card-header{
+  padding: 18px 0 18px 0;
+}
+.card-body{
+  max-width: 465px;
+  width: 465px;
+}
+.privilege,
+.advantages,
+.works{
+    border-top: 1px solid #fff;
+}
+.advantages{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 120px;
+    margin-bottom: 170px;
+}
+.privilege p{
+  width: 385px;
+  margin: 40px auto;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.advantages p{
+  width: 385px;
+  margin: 40px 0;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.advantages:before{
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: -70px;
+  right: 20%;
+  z-index: 1;
+  background-image: url(../img/bolls-2.png);
+  animation-name: bounce5;
+  animation-duration: 1.9s;
+  transform-origin: top;
+  animation-iteration-count: infinite;
+}
+.video{
+  padding: 100px 0;
+  background-color: #252525;
+}
+.footer{
+  padding-top: 60px;
+  padding-bottom: 45px;
+}
+.footer p{
+  width: 385px;
+  margin: 40px 0;
+  font-size: 18px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+element.style {
+}
+.form-control {
+    background: rgb(0 0 0 / 60%);
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0 !important;
+    resize: none;
+    color: #fff;
+}
+.form-control:focus{
+  background: #000;
+  outline: none;
+  box-shadow: none;
+  border-bottom: 1px solid #fff;
+}
+.footer button{
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #000;
+  border: 1px solid #fff;
+  border-radius: 0;
+  padding: 10px 40px;
+  position: relative;
+}
+
+
+.footer button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+.footer button:hover:before {
+    opacity: 1;
+}
+
+.footer button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+
+.animate-bolls{
+  animation-name: bounce5;
+  animation-duration: 1.9s;
+  transform-origin: bottom;
+  animation-iteration-count: infinite;
+}
+.works{
+  padding-bottom: 150px;
+}
+.works-box a{
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #fff;
+  position: relative;
+}
+.works-box a img{
+  width: 100%;
+}
+.works-box a:before{
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 40%;
+  left: 0;
+  top: 0;
+  background-color: rgb(0 0 0 / 50%);
+  transition: all .5s ease;
+}
+
+.works-box a:after{
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 0%;
+  top: 25%;
+  color: #fff;
+  background-image: url(../img/icon-arrow.png);
+  background-repeat: no-repeat;
+  transform: rotate(90deg);
+  animation-name: arrow;
+  animation-duration: 1.9s;
+  transform-origin: top;
+  animation-iteration-count: infinite;
+  opacity: 0;
+  transition: all .5s ease;
+}
+.works-box a:hover:before{
+  width: 100%;
+}
+.works-box a:hover:after{
+  opacity: 1;
+  left: 80%;
+}
+@keyframes arrow {
+    0% { background-position: 0 0; }
+    50% { background-position: 0 10px; }
+    100% { background-position: 0 0; }
+}
+@media (max-width: 1999px){
+  .banner_title{
+    font-size: 76px;
+  }
+}
+@media (max-width: 991px){
+  .banner_title{
+    font-size: 50px;
+    margin-bottom: 60px;
+  }
+  .banner_title:before{
+    top: 42%;
+    right: 23%;
+    width: 30px;
+    height: 30px;
+  }
+  section.banner {
+      padding-top: 60px;
+  }
+  .advantages {
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+  }
+  .works{
+    padding-bottom: 60px;
+  }
+  .video{
+    padding: 60px 0;
+  }
+}
+@media (max-width: 767px){
+  .banner_desc{
+    font-size: 18px;
+  }
+  .banner_title:before {
+    top: 45%;
+    right: 23%;
+    width: 20px;
+    height: 20px;
+  }
+  .banner_title {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+  .section-title{
+    font-size: 18px;
+  }
+  .card-header button{
+    font-size: 16px;
+  }
+  .card-body, .card-header {
+    padding: 18px;
+  }
+}
+@media (max-width: 575px){
+  section.banner {
+    padding-top: 30px;
+  }
+  .banner_title{
+    margin-bottom: 20px;
+    line-height: 40px;
+  }
+  .banner_title:before {
+    display: none;
+  }
+  .services:before{
+    width: 100px;
+    height: 100px;
+  }
+  .mb-163 {
+    margin-bottom: 60px;
+  }
+  .mb-101 {
+    margin-bottom: 40px;
+  }
+  .nav a {
+    margin-left: 30px;
+    font-size: 16px;
+  }
+  .advantages:before{
+    top: -160px;
+  }
+  .card-body,
+  .card{
+    width: 100%;
+  }
+}
+@media (max-width: 420px){
+  .banner_desc {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .nav a {
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  .banner_title {
+    font-size: 28px;
+  }
+  .animate-bolls{
+    margin-top: 30px;
+  }
+  .services{
+    padding-bottom: 300px;
+  }
+  .footer p,
+  .advantages p,
+  .privilege p{
+    width: 100%;
+  }
+}
