@@ -46,5 +46,5 @@ $(document).ready(function(){
   {'opacity':'1.0'});
   }
   });
-  },2000);
+},1700);
 });
