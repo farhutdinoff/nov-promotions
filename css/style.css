@@ -213,7 +213,7 @@ section.banner{
 }
 @keyframes bounce5 {
   0%   { transform: translateY(0); }
-  50%  { transform: translateY(-15px); }
+  50%  { transform: translateY(-5px); }
   100% { transform: translateY(0); }
 }
 
@@ -233,10 +233,6 @@ section.banner{
   background: #fff;
   border-radius: 100%;
   z-index: 1;
-  animation-name: bounce5;
-  animation-duration: 2.5s;
-  transform-origin: top;
-  animation-iteration-count: infinite;
 }
 .services:after {
   content: "";
@@ -247,10 +243,6 @@ section.banner{
   left: 20%;
   z-index: 1;
   background-image: url(../img/bolls-1.png);
-  animation-name: bounce5;
-  animation-duration: 2.3s;
-  transform-origin: top;
-  animation-iteration-count: infinite;
 }
 .card{
   background-color: inherit;
@@ -334,10 +326,6 @@ section.banner{
   right: 20%;
   z-index: 1;
   background-image: url(../img/bolls-2.png);
-  animation-name: bounce5;
-  animation-duration: 1.9s;
-  transform-origin: top;
-  animation-iteration-count: infinite;
 }
 .video{
   padding: 100px 0;
@@ -574,9 +562,12 @@ element.style {
     width: 28px;
     height: 28px;
   }
-  .services:before{
+  .services:before,
+  .services:after,
+  .advantages:before{
     width: 100px;
     height: 100px;
+    background-size: cover;
   }
   .mb-163 {
     margin-bottom: 60px;
